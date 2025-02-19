@@ -13,8 +13,10 @@ function loading(){
 
 // Hide Loading
 function complete(){
-    loader.hidden = true;
-    quoteContainer.hidden = false;
+    if(!loader.hidden){
+        loader.hidden = true;
+        quoteContainer.hidden = false;
+    }
 }
 
 let apiQuotes = [];
